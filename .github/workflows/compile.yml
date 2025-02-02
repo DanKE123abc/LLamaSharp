@@ -463,11 +463,9 @@ jobs:
   compile-android:
     name: Compile (Android) 
     strategy:
-          fail-fast: true
-          matrix:
+        fail-fast: true
+        matrix:
               include:
-                  - build: 'x86'
-                    defines: '-DANDROID_ABI=x86'
                   - build: 'x86_64'
                     defines: '-DANDROID_ABI=x86_64'
                   - build: 'arm64-v8a'
